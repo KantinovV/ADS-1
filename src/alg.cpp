@@ -1,7 +1,5 @@
-// Copyright 2022 NNTU-CS
 #include <cstdint>
 #include "alg.h"
-
 bool checkPrime(uint64_t value) {
  uint64_t count = 0;
  for (int l = 2; l*l <= value; ++l) {
@@ -11,8 +9,6 @@ bool checkPrime(uint64_t value) {
  }
  return true;
 }
-
-
 uint64_t nPrime(uint64_t value) {
 	uint64_t flag = 0, n=0;
 	for(uint64_t i = 2; i <1000000; i++)
@@ -33,7 +29,6 @@ uint64_t nPrime(uint64_t value) {
 		}
 	}
 }
-
 uint64_t nextPrime(uint64_t value) {
 	uint64_t flag = 0, n = 0, pRomis=0;
 	for (uint64_t i = 2; i < 1000000; i++)
@@ -73,7 +68,6 @@ uint64_t nextPrime(uint64_t value) {
 		}
 	}
 }
-
 uint64_t sumPrime(uint64_t hbound) {
  uint64_t sum = 0;
  for (int l = 0; l < hbound; l++) {
