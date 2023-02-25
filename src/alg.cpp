@@ -34,7 +34,7 @@ uint64_t nPrime(uint64_t value) {
 	}
 }
 
-uint64_t nPrime(uint64_t value) {
+uint64_t nextPrime(uint64_t value) {
 	uint64_t flag = 0, n = 0, pRomis=0;
 	for (uint64_t i = 2; i < 1000000; i++)
 	{
