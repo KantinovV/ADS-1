@@ -37,8 +37,8 @@ uint64_t nextPrime(uint64_t value) {
     count++;
    }
    if (count == 2) {
-    return i;
     count = 0;
+    return i;
    }
   }
  }
