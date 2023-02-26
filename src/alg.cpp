@@ -25,9 +25,6 @@ uint64_t nPrime(uint64_t n) {
    if (count2 == n) {
     return i;
    }
-   else {
-    count1 = 0;
-   }
   }
  }
  return 0;
@@ -35,15 +32,12 @@ uint64_t nPrime(uint64_t n) {
 uint64_t nextPrime(uint64_t value) {
  uint64_t count = 0;
  for (int i = value + 1; i <= 10000; ++i) {
-  for (int j = i; j >= 1; —j) {
+  for (int j = i; j >= 1; --j) {
    if (i % j == 0) {
     count++;
    }
    if (count == 2) {
     return i;
-    count = 0;
-   }
-   else {
     count = 0;
    }
   }
